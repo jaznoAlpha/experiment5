@@ -1,0 +1,102 @@
+receiving-header {
+    .container{
+        height: 80px;
+        width: 96vw;
+        background-color: rgba(0, 0, 0, 0.315);
+        display: grid; 
+        grid-template-columns: repeat(auto-fill(200px, 1fr));
+        grid-template-rows: 1fr;
+        margin: 0 auto;
+        justify-content: start;
+        grid-template-areas: 
+        "customer dropdown startdaterange enddaterange random buttons"
+    }
+    #customer{
+        height: 100%;
+        width: 180px;
+        grid-area: customer;
+    }
+    #customerbox{
+        position: relative;
+        top: 25%;
+        margin-left: 7px;
+    }
+    #dropdown{
+        height: 100%;
+        width: 120px;
+        grid-area: dropdown;
+    }
+    #dropdownbox{
+        position: relative;
+        top: 25%;
+        margin-left: 7px;
+        margin-right: 7px;
+    }
+    #startdaterangebox{
+        position: relative;
+        height: 100%;
+        top: 25%;
+        margin-left: 7px;
+        margin-right: 7px;
+        grid-area: startdaterange;
+    }
+    #enddaterangebox{
+        position: relative;
+        height: 100%;
+        top: 25%;
+        margin-left: 7px;
+        margin-right: 7px;
+        grid-area: enddaterange;
+    }
+    #perpage{
+        height: 100%;
+        grid-area: random;
+    }
+    #perpagebox{
+        position: relative;
+        top: 25%;
+        margin-left: 7px;
+        margin-right: 7px;
+    }
+    #buttons{
+        height: 100%;
+        grid-area: buttons;
+    }
+    #buttonsbox{
+        position: relative;
+        top: 25%;
+        margin-left: 7px;
+    }
+    .optionButtons{
+        width: 60px;
+        height: 25px;
+        margin: .5px;
+        background-color: dodgerblue;
+        color: white;
+    }
+    .bottom{
+        height: 25px;
+        margin: .5px;
+    }
+    .date{
+        background-color: white;
+        border-bottom: 1px solid;
+    }
+    .sd{
+        border: none;
+        width: 2em;
+    }
+    .ld{
+        border: none;
+        width: 4em;
+    }
+    .calbutton{
+        position: relative;
+        float: right;
+        height: 25px;
+        width: 20px;
+        vertical-align: middle;
+        text-align: center;
+    }
+    
+}

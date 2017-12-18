@@ -1,0 +1,63 @@
+<div class="container">
+  <div id="customer">
+    <div id="customerbox">
+      <label>Customer Filter</label> <br>
+      <input type="text" class="bottom">
+    </div>
+  </div>
+  <div id="dropdown">
+    <div id="dropdownbox">
+    <label>Date Range</label> <br>
+    <select class="bottom">
+      <option value="today">Today</option>
+      <option value="tomorrow">Tomorrow</option>
+      <option value="week">This Week</option>
+      <option value="month">This Month</option>
+      <option value="quarter">This Quarter</option>
+    </select>
+  </div>
+  </div>
+    <div id="startdaterangebox">
+      <label>Start Date</label>
+      <div class="bottom date">
+        <input class="sd" type="text" maxlength="2"> /
+        <input class="sd" type="text" maxlength="2"> /
+        <input class="ld" type="text" maxlength="4">
+        <div class="calbutton">
+          <calendar-core-start></calendar-core-start>
+        </div>
+      </div>
+    </div>
+    <div id="enddaterangebox">
+        <label>End Date</label>
+        <div class="bottom date">
+          <input class="sd" type="text" maxlength="2"> /
+          <input class="sd" type="text" maxlength="2"> /
+          <input class="ld" type="text" maxlength="4">
+          <div class="calbutton">
+              <calendar-core-end></calendar-core-end>
+            </div>
+        </div>
+      </div>
+  <div id="perpage">
+      <div id="perpagebox">
+          <label>Results</label> <br>
+          <select class="bottom">
+            <option value="10">10</option>
+            <option value="20">20</option>
+            <option value="50">50</option>
+            <option value="100">100</option>
+            <option value="all">All</option>
+          </select>
+        </div>
+  </div>
+  <div id="buttons">
+    <div id="buttonsbox">
+      <label>Options</label> <br>
+      <button class="optionButtons">Refresh</button>
+      <button class="optionButtons">Export</button>
+      <button class="optionButtons">Email</button>
+    </div>
+  </div>
+</div>
+

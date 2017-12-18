@@ -1,0 +1,77 @@
+calendar-button-start {
+    background-color: rgb(64, 64, 64);
+    
+    .buttonMonth{
+        height: 8px;
+        width: 20px;
+        font-size: .4em;
+        font-weight: bold;
+        background-color: rgb(64, 64, 64);
+        color: white;
+        line-height: 9px;
+        vertical-align: middle;
+        text-align: center;
+    }
+    .buttonDay{
+        height: 12px;
+        width: 20px;
+        font-size: .8em;
+        font-weight: bold;
+        background-color: rgb(242, 243, 235);
+        color: rgb(12, 12, 12);
+        line-height: 12px;
+        vertical-align: middle;
+        text-align: center;
+    }
+    
+    .applied{
+        .buttonMonth{
+            font-size: .8em;
+            height: 25px;
+            line-height: 25px;
+            cursor: pointer;
+            transform: rotate(180deg);
+        }
+        .buttonDay{
+            display: none;
+        }
+    }
+    .applied:hover{
+        .buttonMonth{
+            transform: rotate(0deg);
+            animation-name: flipUp;
+            animation-duration: .2s;
+        }
+        @keyframes flipUp {
+            from {
+                    transform: rotateX(180deg);
+                    }
+            to   {
+                    transform: rotateX(0deg);
+                }
+        }
+    }
+}
+
+calendar-button-start:hover {
+    .buttonMonth{
+        font-size: .8em;
+        height: 25px;
+        line-height: 25px;
+        cursor: pointer;
+        transform: rotate(180deg);
+        animation-name: flipDown;
+        animation-duration: .2s;
+    }
+    @keyframes flipDown {
+        from {
+                transform: rotateX(0deg);
+                }
+        to   {
+                transform: rotateX(180deg);
+            }
+    }
+    .buttonDay{
+        display: none;
+    }
+}

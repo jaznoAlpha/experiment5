@@ -1,0 +1,26 @@
+<div class="calendar">
+  <button class="prevMonth topBar" (click)="onPrev()">
+    <</button>
+      <div class="month">
+        <button class="monthBar" (click)="onMonthYear()">{{monthNames[monthShowing]}} {{now.getFullYear()}}</button>
+        <!-- <div 
+        class = "testClass" 
+        [@monthYearAnimation]='state'
+      ></div> -->
+        <!-- THE TOP DIV IS USED WITH ANGULAR ANIMATIONS WHICH IS SUPER BUGGY -->
+        <div class="monthYearBox">
+          <end-month-and-year [ngStyle]="{'display': monthYear ? 'block' : 'none' }"></end-month-and-year>
+        </div>
+      </div>
+      <button class="nextMonth topBar" (click)="onNext()">></button>
+      <p>Sun</p>
+      <p>Mon</p>
+      <p>Tue</p>
+      <p>Wed</p>
+      <p>Thu</p>
+      <p>Fri</p>
+      <p>Sat</p>
+      <button *ngFor="let date of dates" class="dates" (click)="onDate(date)" [ngClass]="{notInMonth: !date.isCurrMonth}">
+        <div [ngClass]="{currentDate: date.isToday}">{{date.getDate()}}</div>
+      </button>
+</div>

@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+end-month-and-year {
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-rows: 1fr 6fr 3fr;
+    
+
+    .monthContainer{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        margin-top: 1px;
+        margin-left: 8px;
+        margin-right: 8px;
+        margin-bottom: 0.1px;
+    }
+
+    .months{
+        margin: 5px;
+        background-color: rgb(255, 255, 241);
+        color: dodgerblue;
+        height: 50px;
+        width: 50px;
+    }
+    
+    .months:hover{
+        margin: 5px;
+        background-color: lightblue;
+        font-size: 1.2em;
+    }
+    
+    .months:focus{
+        margin: 5px;
+        background-color: lightblue;
+        color: white;
+        font-size: 1.2em;
+    }
+
+    #Jan{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    #Feb{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    #Mar{
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    #Apr{
+        grid-column: 4/5;
+        grid-row: 1/2;
+    }
+    #May{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    #Jun{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    #Jul{
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+    #Aug{
+        grid-column: 4/5;
+        grid-row: 2/3;
+    }
+    #Sep{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    #Oct{
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    #Nov{
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+    #Dec{
+        grid-column: 4/5;
+        grid-row: 3/4;
+    }
+    .completionContainer{
+        background-color: rgb(89, 89, 89);
+        color: white;
+        grid-column: 4/5;
+        grid-row: 4/5;
+        height: 50px;
+        width: 50px;
+        line-height: 60px;
+        vertical-align: middle;
+        margin: 5px;
+        font-size: 1.5em;
+    }
+    .completionContainer:hover{
+        font-size: 1.7em;
+    }
+    #prevYear {
+        background-color: rgb(89, 89, 89);
+        color: white;
+        grid-column: 1/2;
+        grid-row: 4/5;
+        height: 50px;
+        width: 50px;
+        line-height: 50px;
+        vertical-align: middle;
+        text-align: center;
+        margin: 5px;
+        font-size: 1.3em;
+    }
+    #prevYear:hover {
+        font-size: 1.5em;
+    }
+    #theYear{
+        background-color: rgb(89, 89, 89);
+        color: white;
+        grid-column: 2/3;
+        grid-row: 4/5;
+        height: 50px;
+        width: 50px;
+        line-height: 50px;
+        vertical-align: middle;
+        text-align: center;
+        margin: 5px;
+        border: 0;
+        font-size: 1.3em;
+    }
+    #nextYear {
+        background-color: rgb(89, 89, 89);
+        color: white;
+        grid-column: 3/4;
+        grid-row: 4/5;
+        height: 50px;
+        width: 50px;
+        line-height: 50px;
+        vertical-align: middle;
+        text-align: center;
+        margin: 5px;
+        font-size: 1.3em;
+    }
+    #nextYear:hover {
+        font-size: 1.5em;
+    }
+}

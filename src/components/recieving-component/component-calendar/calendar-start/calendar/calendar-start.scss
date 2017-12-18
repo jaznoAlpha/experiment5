@@ -1,0 +1,102 @@
+calendar-start {
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .calendar{
+        // background-color: rgb(138, 138, 138);
+        margin: 1px;
+        height: 281px;
+        width: 261px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr .5fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    
+    .month {
+        grid-column: 2/7;
+        text-align: center;
+        background-color: rgb(89, 89, 89);
+        color: white;
+        margin: 0;
+    }
+    .monthBar {
+        background-color: rgb(89, 89, 89);
+        color: rgb(235, 235, 235);
+        font-size: 20px;
+        line-height: 40px;
+        text-align: center;
+        vertical-align: middle;
+    }
+    .monthBar:hover {
+        color: white;
+        font-size: 21px;
+    }
+    .monthYearBox{
+        position: relative;
+        right: 37px;
+    }   
+    start-month-and-year {
+         background-color: rgb(89, 89, 89);
+         height: 241px;
+         width: 261px;
+         position: absolute;
+     }
+    
+    .prevMonth{
+        grid-column: 1/2;
+        text-align: center;
+        background-color: rgb(89, 89, 89);
+        color: white;
+        border: 0;
+        margin: 0;
+    }
+    
+    .nextMonth{
+        grid-column: 7/8;
+        text-align: center;
+        background-color: rgb(89, 89, 89);
+        color: white;
+        border: 0;
+        margin: 0;
+    }
+    .topBar:hover {
+        font-size: 1.5em;
+    }
+    
+    p{
+        background-color: rgb(241, 235, 235);
+        color: rgb(121, 104, 104);
+        text-align: center;
+        margin: 1px;
+    }
+    
+    .dates{
+        border: solid 0.1px;
+        border-color: rgb(255, 255, 255);
+        background-color: rgb(235, 219, 219);
+        color: rgb(138, 126, 126);
+    }
+    
+    .dates:hover{
+        background-color: dodgerblue;
+        color: white;
+    }
+    
+    .dates:focus{
+        background-color: dodgerblue !important; 
+        color: white;
+    }
+    
+    .currentDate{
+        color: black;
+        font-weight: bold;
+    }
+    
+    .notInMonth {
+        background-color: rgb(172, 151, 151);
+    }
+
+}
