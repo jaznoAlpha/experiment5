@@ -26,6 +26,10 @@ export class CalendarStartComponent implements OnChanges {
     this.currdate.setSeconds(0);
     this.currdate.setMilliseconds(0);
     this.setup();
+    events.subscribe('endDate', (date) => {
+      this.monthYearMonthHandle(date.getMonth());
+      this.monthYearYearHandle(date.getFullYear());
+    });
   }
 
   ngOnChanges() {

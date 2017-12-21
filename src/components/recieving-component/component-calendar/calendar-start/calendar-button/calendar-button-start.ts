@@ -50,6 +50,10 @@ export class CalendarButtonStartComponent implements OnInit {
                       events.subscribe('endDate', (date) => {
                         this.checkDate(date)
                       });
+                      events.subscribe('dropdown', (val) => {
+                        let date = new Date()
+                        this.setStardDate(date)
+                      });
                 }
 
     ngOnInit(){
@@ -57,16 +61,16 @@ export class CalendarButtonStartComponent implements OnInit {
     }
 
     checkDate(date) {
-        let startDate = date.getDate();
-        let startMonth = date.getMonth();
-        let startYear = date.getFullYear();
-        if(startYear > this.endYear){
+        let endDate = date.getDate();
+        let endMonth = date.getMonth();
+        let endYear = date.getFullYear();
+        if(endYear < this.startYear){
             this.setStardDate(date);
         }
-        else if(startMonth > this.endMonth){
+        else if(endMonth < this.startMonth && endYear == this.startYear){
             this.setStardDate(date);
         }
-        else if(startDate > this.endDate){
+        else if(endDate < this.startDate && endMonth == this.startMonth && endYear == this.startYear){
             this.setStardDate(date);
         }
     }
