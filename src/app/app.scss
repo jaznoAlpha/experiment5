@@ -14,3 +14,43 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+.pbg {
+    background-color: dodgerblue;
+    color: white;
+}
+.sbg {
+    background-color: rgb(242, 243, 235);
+    color: rgb(12, 12, 12);
+}
+
+.pdbg{
+    background-color: rgb(16, 81, 145) !important;
+    color: white;
+}
+
+.whiteSpace {
+    background-color: white;
+    color: black;
+}
+
+.primaryButton {
+    background-color: rgb(16, 81, 145);
+    color: white;
+}
+
+.secondaryButton {
+    background-color: rgb(101, 154, 42);
+    color: white;
+}
+
+.dangerButton {
+    background-color: orangered;
+    color: white;
+}
+.whiteText{
+    color: white;
+}
+.textonWhite{
+    color: dodgerblue;
+}

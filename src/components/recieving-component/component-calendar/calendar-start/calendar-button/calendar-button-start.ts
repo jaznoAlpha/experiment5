@@ -50,9 +50,8 @@ export class CalendarButtonStartComponent implements OnInit {
                       events.subscribe('endDate', (date) => {
                         this.checkDate(date)
                       });
-                      events.subscribe('dropdown', (val) => {
-                        let date = new Date()
-                        this.setStardDate(date)
+                      events.subscribe('RHdropdownStart', (sd) => {
+                        this.setStardDate(sd);
                       });
                 }
 
@@ -66,12 +65,15 @@ export class CalendarButtonStartComponent implements OnInit {
         let endYear = date.getFullYear();
         if(endYear < this.startYear){
             this.setStardDate(date);
+            this.events.publish('startDate', date);
         }
         else if(endMonth < this.startMonth && endYear == this.startYear){
             this.setStardDate(date);
+            this.events.publish('startDate', date);
         }
         else if(endDate < this.startDate && endMonth == this.startMonth && endYear == this.startYear){
             this.setStardDate(date);
+            this.events.publish('startDate', date);
         }
     }
 

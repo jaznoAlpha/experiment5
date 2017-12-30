@@ -30,6 +30,10 @@ export class CalendarStartComponent implements OnChanges {
       this.monthYearMonthHandle(date.getMonth());
       this.monthYearYearHandle(date.getFullYear());
     });
+    events.subscribe('RHdropdownStart', (date) => {
+      this.monthYearMonthHandle(date.getMonth());
+      this.monthYearYearHandle(date.getFullYear());
+    });
   }
 
   ngOnChanges() {

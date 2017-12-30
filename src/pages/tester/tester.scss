@@ -1,7 +1,29 @@
 page-tester {
+    ion-title{
+        line-height: 44px;
+        vertical-align: middle;
+        width: 300px;
+    }
     .redbox {
         background-color: red;
         height: 200px;
         width: 200px;
+    }
+    .testImg{
+        // background: linear-gradient(rgb(255, 0, 0), rgb(76, 168, 63), rgb(255, 0, 0));
+        background-color: orangered;
+        // height: 15%;
+        // width:  15%;
+    }
+    .testImgBcg{
+        // height: 725px;
+        // width:  750px;
+        height: 42.53px;
+        width:  44px;
+        float: left;
+    }
+    .textonWhite{
+        text-align: center;
+        font-size: 1.3em;
     }
 }

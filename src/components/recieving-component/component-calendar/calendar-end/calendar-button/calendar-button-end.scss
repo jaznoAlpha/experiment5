@@ -1,25 +1,20 @@
 calendar-button-end {
-    background-color: rgb(64, 64, 64);
     
     .buttonMonth{
         height: 8px;
         width: 20px;
         font-size: .4em;
         font-weight: bold;
-        background-color: rgb(64, 64, 64);
-        color: white;
         line-height: 9px;
         vertical-align: middle;
         text-align: center;
     }
     .buttonDay{
-        height: 12px;
+        height: 16px;
         width: 20px;
         font-size: .8em;
         font-weight: bold;
-        background-color: rgb(242, 243, 235);
-        color: rgb(12, 12, 12);
-        line-height: 12px;
+        line-height: 16px;
         vertical-align: middle;
         text-align: center;
     }

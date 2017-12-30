@@ -1,25 +1,40 @@
-<div class="container">
+<div class="pbg container">
+  <div id="sidemenu">
+      <img src="assets/imgs/whiteMenuFat.png" alt="" id="sideMenuImg">
+      Receiving
+  </div>
   <div id="customer">
     <div id="customerbox">
       <label>Customer Filter</label> <br>
-      <input type="text" class="bottom">
+      <input type="text" class="bottom whiteSpace">
     </div>
   </div>
   <div id="dropdown">
     <div id="dropdownbox">
     <label>Date Range</label> <br>
-    <select class="bottom" id="replaceText" (click)="onChange($event.target.value)">
-      <option value="1">Today</option>
+    <select class="bottom whiteSpace" id="replaceText" (click)="onChange($event.target.value)">
+      <option value="0">Today</option>
+      <option value="1">Yesterday</option>
       <option value="2">Tomorrow</option>
       <option value="3">This Week</option>
-      <option value="4">This Month</option>
-      <option value="5">This Quarter</option>
+      <option value="4">Last Week</option>
+      <option value="5">Next Week</option>
+      <option value="6">This Month</option>
+      <option value="7">Last Month</option>
+      <option value="8">Next Month</option>
+      <option value="9">This Quarter</option>
+      <option value="10">Last Quarter</option>
+      <option value="11">Next Quarter</option>
+      <option value="12">This Year</option>
+      <option value="13">Last Year</option>
+      <option value="14">Next Year</option>
+      <option value="15">Custom</option>
     </select>
   </div>
   </div>
     <div id="startdaterangebox">
       <label>Start Date</label>
-      <div class="bottom date">
+      <div class="bottom date whiteSpace">
         <input class="sd" type="text" maxlength="2"> /
         <input class="sd" type="text" maxlength="2"> /
         <input class="ld" type="text" maxlength="4">
@@ -30,7 +45,7 @@
     </div>
     <div id="enddaterangebox">
         <label>End Date</label>
-        <div class="bottom date">
+        <div class="bottom date whiteSpace">
           <input class="sd" type="text" maxlength="2"> /
           <input class="sd" type="text" maxlength="2"> /
           <input class="ld" type="text" maxlength="4">
@@ -42,7 +57,7 @@
   <div id="perpage">
       <div id="perpagebox">
           <label>Results</label> <br>
-          <select class="bottom">
+          <select class="bottom whiteSpace">
             <option value="10">10</option>
             <option value="20">20</option>
             <option value="50">50</option>
@@ -54,10 +69,14 @@
   <div id="buttons">
     <div id="buttonsbox">
       <label>Options</label> <br>
-      <button class="optionButtons">Refresh</button>
-      <button class="optionButtons">Export</button>
-      <button class="optionButtons">Email</button>
+      <button class="optionButtons primaryButton">Refresh</button>
+      <button class="optionButtons secondaryButton">Export</button>
+      <button class="optionButtons dangerButton">Email</button>
     </div>
   </div>
+    <div>
+      <div class="circle pbg"></div>
+      <img src="assets/imgs/circArrowNeg.png" alt="" id="RHcircArrow">
+    </div>
 </div>
 

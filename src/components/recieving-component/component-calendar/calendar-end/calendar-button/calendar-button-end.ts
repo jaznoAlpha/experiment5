@@ -50,36 +50,13 @@ export class CalendarButtonEndComponent implements OnInit {
                       events.subscribe('startDate', (date) => {
                         this.checkDate(date)
                       });
-                      events.subscribe('dropdown', (val) => {
-                        this.dateHelper(val);
+                      events.subscribe('RHdropdownEnd', (ed) => {
+                        this.setEndDate(ed)
                       });
                                   }
 
     ngOnInit(){
         this.setMonth(this.endMonth);
-    }
-
-    dateHelper(val) {
-        let date = new Date();
-        switch(val) {
-            case 'today':
-                this.setEndDate(date);
-                break;
-            case 'tomorrow':
-                date.setDate(date.getDate()+1);
-                this.setEndDate(date);
-                break;
-            case 'week':
-                date.setDate(date.getDate()+7);
-                this.setEndDate(date);
-                break;
-            case 'month':
-                console.log('month')
-                break;
-            case 'quarter':
-                console.log('quarter')
-                break;
-        }
     }
 
     checkDate(date) {
@@ -88,12 +65,15 @@ export class CalendarButtonEndComponent implements OnInit {
         let startYear = date.getFullYear();
         if(startYear > this.endYear){
             this.setEndDate(date);
+            this.events.publish('endDate', date);
         }
         else if(startMonth > this.endMonth && startYear == this.endYear){
             this.setEndDate(date);
+            this.events.publish('endDate', date);
         }
         else if(startDate > this.endDate && startMonth == this.endMonth && startYear == this.endYear){
             this.setEndDate(date);
+            this.events.publish('endDate', date);
         }
     }
 

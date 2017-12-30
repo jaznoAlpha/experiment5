@@ -1,18 +1,18 @@
 <div class="calendar">
-  <button class="prevMonth topBar" (click)="onPrev()">
-    <</button>
-      <div class="month">
-        <button class="monthBar" (click)="onMonthYear()">{{monthNames[monthShowing]}} {{now.getFullYear()}}</button>
+  <div class="pbdg prevMonth topBar" (click)="onPrev()">
+    <</div>
+      <div class="month pbdg">
+        <div class="monthBar pbdg" (click)="onMonthYear()">{{monthNames[monthShowing]}} {{now.getFullYear()}}</div>
         <!-- <div 
         class = "testClass" 
         [@monthYearAnimation]='state'
       ></div> -->
         <!-- THE TOP DIV IS USED WITH ANGULAR ANIMATIONS WHICH IS SUPER BUGGY -->
         <div class="monthYearBox">
-          <start-month-and-year [ngStyle]="{'display': monthYear ? 'block' : 'none' }"></start-month-and-year>
+          <start-month-and-year class="pdbg" [ngStyle]="{'display': monthYear ? 'block' : 'none' }"></start-month-and-year>
         </div>
       </div>
-      <button class="nextMonth topBar" (click)="onNext()">></button>
+      <div class="pdbg nextMonth topBar" (click)="onNext()">></div>
       <p>Sun</p>
       <p>Mon</p>
       <p>Tue</p>

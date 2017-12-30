@@ -32,6 +32,10 @@ export class CalendarEndComponent implements OnChanges {
       this.monthYearMonthHandle(date.getMonth());
       this.monthYearYearHandle(date.getFullYear());
     });
+    events.subscribe('RHdropdownEnd', (date) => {
+      this.monthYearMonthHandle(date.getMonth());
+      this.monthYearYearHandle(date.getFullYear());
+    });
   }
 
   ngOnChanges() {
