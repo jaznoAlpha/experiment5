@@ -46,7 +46,7 @@ export class CalendarStartComponent implements OnChanges {
     this.now.setDate(1);
     this.monthShowing = this.now.getMonth();
     let today = -(this.now.getDay());
-    for (let i = 0; i < 35; i++) {
+    for (let i = 0; i < 42; i++) {
       let d = new Date(this.now);
       d.setHours(0);
       d.setMinutes(0);

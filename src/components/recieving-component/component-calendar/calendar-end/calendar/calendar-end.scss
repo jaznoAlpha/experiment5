@@ -8,22 +8,22 @@ calendar-end {
     .calendar{
         // background-color: rgb(138, 138, 138);
         margin: 1px;
-        height: 281px;
+        height: 301px;
         width: 261px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr .5fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr .5fr 1fr 1fr 1fr 1fr 1fr 1fr;
     }
     
     .month {
         grid-column: 2/7;
         text-align: center;
-        background-color: rgb(89, 89, 89);
+        // background-color: rgb(89, 89, 89);
         color: white;
         margin: 0;
     }
     .monthBar {
-        background-color: rgb(89, 89, 89);
+        // background-color: rgb(89, 89, 89);
         color: rgb(235, 235, 235);
         font-size: 20px;
         line-height: 40px;
@@ -39,8 +39,8 @@ calendar-end {
         right: 37px;
     }   
     end-month-and-year {
-         background-color: rgb(89, 89, 89);
-         height: 241px;
+        //  background-color: rgb(89, 89, 89);
+         height: 281px;
          width: 261px;
          position: absolute;
      }
@@ -48,7 +48,7 @@ calendar-end {
     .prevMonth{
         grid-column: 1/2;
         text-align: center;
-        background-color: rgb(89, 89, 89);
+        // background-color: rgb(89, 89, 89);
         color: white;
         border: 0;
         margin: 0;
@@ -67,8 +67,8 @@ calendar-end {
     }
     
     p{
-        background-color: rgb(241, 235, 235);
-        color: rgb(121, 104, 104);
+        // background-color: rgb(241, 235, 235);
+        // color: rgb(121, 104, 104);
         text-align: center;
         margin: 1px;
     }

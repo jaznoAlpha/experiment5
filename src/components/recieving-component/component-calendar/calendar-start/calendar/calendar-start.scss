@@ -8,11 +8,11 @@ calendar-start {
     .calendar{
         // background-color: rgb(138, 138, 138);
         margin: 1px;
-        height: 281px;
+        height: 301px;
         width: 261px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr .5fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr .5fr 1fr 1fr 1fr 1fr 1fr 1fr;
     }
     
     .month {
